@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/white"
+    app:cardElevation="1dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <View
+            android:id="@+id/line_do"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@+id/rl_unscroll"
+            android:background="@drawable/shape_view_shadow" />
+
+        <TextView
+            android:id="@+id/tv_news_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17px"
+            android:layout_marginTop="22px"
+            android:background="@drawable/shape_informatin_head"
+            android:paddingBottom="6px"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="6px"
+            android:text="头条"
+            android:textColor="@color/color_47a4f2"
+            android:textSize="14sp" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_news_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_news_tag"
+            android:layout_marginLeft="17px"
+            android:layout_marginRight="17px"
+            android:layout_marginTop="26px"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="17px"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/news_title"
+                    style="@style/news_title_tv_style"
+                    android:ellipsize="end"
+                    android:lineSpacingExtra="14px"
+                    android:maxEms="26"
+                    android:maxLines="2"
+                    android:text="互联网世界今日开启“天下时间”"
+                    android:textColor="@color/color_666666" />
+
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="62dp"
+                    android:background="@color/color_news_mini" />
+
+                <TextView
+                    android:id="@+id/news_time"
+                    style="@style/news_mini_title_style"
+                    android:layout_marginLeft="12px"
+                    android:layout_toRightOf="@+id/view"
+                    android:text="17分钟前" />
+
+                <TextView
+                    android:id="@+id/news_by"
+                    style="@style/news_mini_title_style"
+                    android:layout_marginLeft="22px"
+                    android:layout_toRightOf="@+id/news_time"
+                    android:text="财经头" />
+
+
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px">
+
+                <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/news_img"
+                    android:layout_width="110dp"
+                    android:layout_height="70dp"
+                    android:src="@mipmap/icon_default"
+                    app:riv_corner_radius="8px"
+                    app:riv_mutate_background="true" />
+
+                <View
+                    android:id="@+id/iv_layer"
+                    android:layout_width="100dp"
+                    android:layout_height="65dp" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_news_item_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17px"
+            android:layout_marginRight="17px"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <TextView
+                android:id="@+id/news_title_three"
+                style="@style/news_title_tv_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="28px"
+                android:layout_marginTop="28px"
+                android:ellipsize="end"
+                android:maxEms="26"
+                android:maxLines="2"
+                android:text="互联网世界今日开启“天下时间"
+                android:textColor="@color/color_666666" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/news_time_three"
+                    style="@style/news_mini_title_style"
+                    android:layout_marginTop="5dp"
+                    android:text="17分钟前" />
+
+                <TextView
+                    android:id="@+id/news_by_three"
+                    style="@style/news_mini_title_style"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/news_time"
+                    android:text="财经头条" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="28px"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/iv_hor_01"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/ic_launcher"
+                        app:riv_corner_radius="8px"
+                        app:riv_mutate_background="true" />
+
+                    <View
+                        android:id="@+id/iv_layer_01"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginRight="10px"
+                    android:layout_weight="1">
+
+                    <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/iv_hor_02"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/ic_launcher"
+                        app:riv_corner_radius="8px"
+                        app:riv_mutate_background="true" />
+
+                    <View
+                        android:id="@+id/iv_layer_02"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+
+                    <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/iv_hor_03"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/ic_launcher"
+                        app:riv_corner_radius="8px"
+                        app:riv_mutate_background="true" />
+
+                    <View
+                        android:id="@+id/iv_layer_03"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

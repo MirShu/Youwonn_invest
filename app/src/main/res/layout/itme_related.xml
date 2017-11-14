@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/white"
+    app:cardElevation="1dp">
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/news_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28px"
+                android:layout_marginRight="24px"
+                android:layout_marginTop="28px"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:lineSpacingExtra="14px"
+                android:maxEms="26"
+                android:maxLines="2"
+                android:text="周一(11月21日)亚洲时段，美元上升州时段美元"
+                android:textColor="@color/color_666666"
+                android:textSize="16sp" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="28px"
+                android:layout_marginRight="28px"
+                android:layout_marginTop="28px">
+
+                <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/news_img"
+                    android:layout_width="110dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="center"
+                    app:riv_corner_radius="8px"
+                    app:riv_mutate_background="true" />
+
+                <View
+                    android:id="@+id/iv_layer"
+                    android:layout_width="90dp"
+                    android:layout_height="65dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="3dp" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+
+    <item android:duration="50">
+        <clip xmlns:android="http://schemas.android.com/apk/res/android"
+            android:clipOrientation="horizontal"
+            android:drawable="@mipmap/ic_anim_0000"
+            android:gravity="left" />
+    </item>
+
+    <item
+        android:drawable="@mipmap/ic_anim_0000"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/ic_anim_0001"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/ic_anim_0002"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/ic_anim_0003"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/ic_anim_0004"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/ic_anim_0005"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/ic_anim_0006"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/ic_anim_0007"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/ic_anim_0008"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/ic_anim_0009"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/ic_anim_00010"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/ic_anim_00011"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/ic_anim_00012"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/ic_anim_00013"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/ic_anim_00014"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/ic_anim_00015"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/ic_anim_00016"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/ic_anim_00017"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/ic_anim_00018"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/ic_anim_00018"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/ic_anim_00020"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/ic_anim_00021"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/ic_anim_00022"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/ic_anim_00023"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/ic_anim_00024"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/ic_anim_00025"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/ic_anim_00026"
+        android:duration="50" />
+</animation-list>

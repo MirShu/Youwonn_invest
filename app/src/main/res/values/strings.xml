@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">永盈</string>
+    <string name="tab_information">资讯</string>
+    <string name="tab_live">直播</string>
+    <string name="tab_market">交易</string>
+    <string name="tab_mall">研报</string>
+    <string name="tv_mall">积分商城</string>
+    <string name="tv_off_the_net">网络不给力\n请点击屏幕重新加载</string>
+    <string name="tv_head_news">NEW最新</string>
+    <string name="tv_hot_news">HOT头条</string>
+    <string name="tv_network_desertion">网络开小差，请稍后重试</string>
+    <string name="tv_network_suck">网络不给力，请稍后再试</string>
+    <string name="tv_statement">声明：本站行情数据均来源网络，不构成任何交易建议，基于本站数据进行交易导致损失，我方概不负责。</string>
+    <string name="tv_about">关于我们</string>
+    <string name="mnPlayerNoNetHint">当前网络不可用,检查网络设置</string>
+    <string name="mnPlayerUrlEmptyHint">播放地址为空</string>
+    <string name="mnPlayerPlayFailHint">视频播放失败</string>
+    <string name="mnPlayerMobileNetHint">请注意,当前网络状态切换为3G/4G网络</string>
+    <string name="tv_not_broadcast">大人还没开播呢</string>
+</resources>

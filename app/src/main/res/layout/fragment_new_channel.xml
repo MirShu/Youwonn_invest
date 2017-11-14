@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tab_main_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f9f9f9"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include_head"
+        android:background="@android:color/white"
+        android:onClick="onClick"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_erro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/error_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_erro"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/tv_off_the_net"
+            android:textColor="@color/color_d8d8d8" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_main_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@drawable/shape_view_shadow" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="horizontal">
+
+                <com.youwonn_invest.widget.extent.MarqueeView
+                    android:id="@+id/rcMarketView"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:paddingTop="5dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:src="@mipmap/icon_text_roll" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_unscroll"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#00000000" />
+        </RelativeLayout>
+
+        <cn.bingoogolapple.refreshlayout.BGARefreshLayout
+            android:id="@+id/bga_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_upto">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/color_f0f0f0"
+                android:overScrollMode="never" />
+        </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+    </LinearLayout>
+</RelativeLayout>

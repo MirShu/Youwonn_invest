@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tab_main_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f9f9f9"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include_head"
+        android:background="@android:color/white"
+        android:onClick="onClick"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_erro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/error_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_erro"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:lineSpacingExtra="10px"
+            android:text="@string/tv_off_the_net"
+            android:textColor="@color/color_d8d8d8" />
+    </RelativeLayout>
+
+    <cn.bingoogolapple.refreshlayout.BGARefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/bga_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rl_empty"
+        android:background="@color/color_f9f9f9"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp">
+
+        <cn.bingoogolapple.refreshlayout.BGAStickyNavLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingBottom="0dp"
+            android:paddingTop="0dp">
+
+            <com.youwonn_invest.ui.view.NewsLoopPicture
+                android:id="@+id/loop_picture"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@drawable/shape_view_shadow" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line"
+                    android:background="@android:color/white"
+                    android:orientation="horizontal">
+
+                    <com.youwonn_invest.widget.extent.MarqueeView
+                        android:id="@+id/rcMarketView"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:paddingTop="6dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@mipmap/icon_text_roll" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_unscroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="3dp"
+                    android:background="#00000000" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_f0f0f0"
+                android:overScrollMode="never" />
+        </cn.bingoogolapple.refreshlayout.BGAStickyNavLayout>
+    </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+</RelativeLayout>

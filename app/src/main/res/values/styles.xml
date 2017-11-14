@@ -1,0 +1,75 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!-- 自定义dialog的样式 -->
+    <style name="CustomDialog">
+        <item name="android:windowIsFloating">true</item>
+
+        <item name="android:windowContentOverlay">@null</item>
+
+        <item name="android:windowTitleStyle">@null</item>
+
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+
+        <item name="android:backgroundDimEnabled">false</item>
+
+        <item name="android:background">#00ffffff</item>
+    </style>
+
+
+    <!--新闻大标题文字Style-->
+    <style name="news_title_tv_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color_news_title</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <!--新闻小标题文字Style-->
+    <style name="news_mini_title_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color_news_mini</item>
+        <item name="android:layout_marginTop">60dp</item>
+    </style>
+
+    <!--详情界面修改字体三个TextView Font Style-->
+    <style name="font_textview_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:paddingTop">6dp</item>
+    </style>
+
+    <!--线条View Style-->
+    <style name="view_line_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/color_line</item>
+    </style>
+
+    <!--详情界面弹出PopuWindStyle-->
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+    <style name="refresh_footer">
+        <item name="android:indeterminateDrawable">@drawable/refresh_footer_anim</item>
+    </style>
+
+    <style name="view_loding">
+        <item name="android:indeterminateDrawable">@drawable/view_loding</item>
+    </style>
+</resources>

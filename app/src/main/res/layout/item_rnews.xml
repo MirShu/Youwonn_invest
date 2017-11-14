@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="vertical"
+    app:cardElevation="2dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorPlayerProgressBg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/fl_imag"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content">
+
+            <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/thumbnail_pic_s"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                app:riv_corner_radius="8px"
+                app:riv_mutate_background="true" />
+
+            <View
+                android:id="@+id/iv_layer"
+                android:layout_width="80dp"
+                android:layout_height="70dp" />
+        </FrameLayout>
+
+        <!--<de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"-->
+        <!--android:id="@+id/thumbnail_pic_s"-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:src="@mipmap/icon_yy"-->
+        <!--app:civ_border_color="@color/white"-->
+        <!--app:civ_border_width="1dp" />-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/fl_imag"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="行业的经济结构随行行业"
+                android:textColor="@color/color_666666"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/author_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/rl_bott"
+                android:text="新浪港股"
+                android:textColor="@color/color_666666"
+                android:textSize="12sp" />
+
+
+            <RelativeLayout
+                android:id="@+id/rl_bott"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="5dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="09-11-10"
+                    android:textColor="@color/color_666666"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="财经"
+                    android:textColor="@color/color_666666"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

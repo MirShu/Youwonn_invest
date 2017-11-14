@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_main_title"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/shape_gradient_backg"
+        android:gravity="center"
+        android:text="交易行情"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <com.youwonn_invest.widget.extent.ScrollViewEx
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_main_title"
+        android:focusable="false"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyChannel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:overScrollMode="never" />
+
+            <LinearLayout
+                android:id="@+id/ll_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recyChannel"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+
+                <com.rey.material.widget.TextView
+                    android:id="@+id/tv_01"
+                    style="@style/Material.Drawable.Ripple.Wave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/icon_zb"
+                    android:onClick="onClick"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:drawablePadding="5dp"
+                    android:paddingTop="10dp"
+                    android:text="【直播】A股市场正发生三大颠覆性变化！"
+                    android:textColor="@color/color_666666"
+                    android:textSize="18sp" />
+
+                <com.rey.material.widget.TextView
+                    android:id="@+id/tv_02"
+                    style="@style/Material.Drawable.Ripple.Wave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/icon_gg"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:drawablePadding="5dp"
+                    android:paddingTop="10dp"
+                    android:text="【公告】午间公告一览：6股发布重要公告"
+                    android:textColor="@color/color_666666"
+                    android:textSize="18sp" />
+
+                <com.rey.material.widget.TextView
+                    android:id="@+id/tv_03"
+                    style="@style/Material.Drawable.Ripple.Wave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/icon_jh"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:drawablePadding="5dp"
+                    android:paddingTop="10dp"
+                    android:text="【机会】引力波到深空探测 太空经济来临"
+                    android:textColor="@color/color_666666"
+                    android:textSize="18sp" />
+
+                <com.rey.material.widget.TextView
+                    android:id="@+id/tv_04"
+                    style="@style/Material.Drawable.Ripple.Wave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/icon_jd"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:drawablePadding="5dp"
+                    android:text="【焦点】外媒：中国抛售1026亿美金的美股"
+                    android:textColor="@color/color_666666"
+                    android:textSize="18sp" />
+
+                <com.rey.material.widget.TextView
+                    android:id="@+id/tv_05"
+                    style="@style/Material.Drawable.Ripple.Wave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/icon_rd"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:drawablePadding="5dp"
+                    android:text="【揭秘】宁德时代股东榜中“宁波联合”是谁"
+                    android:textColor="@color/color_666666"
+                    android:textSize="18sp" />
+
+                <com.xiaosu.VerticalRollingTextView
+                    android:id="@+id/verticalRollingView"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:duration="500"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:textColor="@color/color_666666"
+                    android:textSize="16dp"
+                    app:animInterval="3000" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_chor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_title"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/secondtitlebg">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/icon_hq"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="5dp"
+                    android:text="基数行情"
+                    android:textColor="@color/color_fefefe"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/icon_more"
+                    android:gravity="center_vertical"
+                    android:paddingRight="15dp"
+                    android:text="更多"
+                    android:textColor="@color/color_fefefe"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_chor"
+                android:background="#00000000"
+                android:overScrollMode="never" />
+
+            <RelativeLayout
+                android:id="@+id/rl_hor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recyclerView"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/secondtitlebg">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/icon_jz"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="5dp"
+                    android:text="净值基金数据"
+                    android:textColor="@color/color_fefefe"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/icon_more"
+                    android:gravity="center_vertical"
+                    android:paddingRight="15dp"
+                    android:text="更多"
+                    android:textColor="@color/color_fefefe"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyViewFund"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_hor"
+                android:background="#00000000"
+                android:overScrollMode="never" />
+
+            <RelativeLayout
+                android:id="@+id/rl_relevant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recyViewFund"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/secondtitlebg">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/icon_aboutnews"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="5dp"
+                    android:text="最新财经资讯"
+                    android:textColor="@color/color_fefefe"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyRelevant"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/rl_relevant"
+                android:background="@color/color_f9f9f9" />
+
+        </RelativeLayout>
+    </com.youwonn_invest.widget.extent.ScrollViewEx>
+</RelativeLayout>
